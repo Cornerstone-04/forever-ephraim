@@ -76,6 +76,29 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+    
+    --background: 36 39% 96%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 0 0% 10%;
+    --primary-foreground: 36 39% 96%;
+    --secondary: 30 20% 88%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 36 20% 90%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 30 30% 85%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 0 0% 10%;
+    --radius: 0.5rem;
+  
 }
 
 .dark {
@@ -114,9 +137,26 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-playfair), serif;
+  }
+  .font-sans {
+    font-family: var(--font-inter), sans-serif;
   }
 }

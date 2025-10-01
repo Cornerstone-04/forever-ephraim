@@ -1,103 +1,152 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
+import { Navigation } from "@/components/common/navigation";
+import { Footer } from "@/components/common/footer";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-background min-h-[80vh] flex justify-center items-center">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                Crafting copies that connect, move people, and convert.
+              </h1>
+            </div>
+            <div className="space-y-6">
+              <p className="text-lg sm:text-xl text-foreground leading-relaxed">
+                I'm Forever, and I turn boring brand messages into stuff people
+                actually want to read. If your brand needs words with
+                personality, nice to meet you! 👋🏻
+              </p>
+              <p className="text-base text-muted-foreground italic">
+                "Forever?? That's Your Real Name?" YES, it really is.
+              </p>
+              <Button size="lg" asChild className="group">
+                <Link href="/portfolio">
+                  See My Work
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/20 border-y border-border">
+        <div className="container mx-auto max-w-6xl">
+          <p className="text-xs uppercase tracking-widest text-muted-foreground text-center mb-8">
+            As Featured In
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 lg:gap-16 opacity-50 grayscale">
+            <span className="font-serif text-2xl font-bold">Forbes</span>
+            <span className="font-serif text-2xl font-bold">GLAMOUR</span>
+            <span className="font-serif text-2xl font-bold">ELLE</span>
+            <span className="font-serif text-2xl font-bold">Inc.</span>
+            <span className="font-serif text-xl font-bold">
+              BUSINESS INSIDER
+            </span>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
+        <div className="container mx-auto max-w-6xl text-center">
+          <p className="text-sm uppercase tracking-widest mb-4 opacity-80">
+            Transform Your Brand Story
+          </p>
+          <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+            Amplifying Your Message to Book Dream Clients
+          </h2>
+          <p className="text-lg max-w-3xl mx-auto leading-relaxed opacity-90 mb-12">
+            Through strategic storytelling, I craft messages that resonate
+            deeply with your audience. Every word is intentional. Every sentence
+            designed to move people from curiosity to conversion.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Copy Strategy",
+                description:
+                  "Transform your brand voice into conversion-focused messaging.",
+              },
+              {
+                title: "Brand Storytelling",
+                description:
+                  "Connect emotionally with audiences through compelling narratives.",
+              },
+              {
+                title: "Content Marketing",
+                description:
+                  "Build authority and trust with strategic content that converts.",
+              },
+            ].map((service) => (
+              <Card
+                key={service.title}
+                className="bg-primary-foreground text-primary border-0"
+              >
+                <CardContent className="p-8">
+                  <h3 className="font-serif text-xl font-bold mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="aspect-[3/4] bg-secondary/30 rounded-lg overflow-hidden">
+              <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                [Portrait Photo]
+              </div>
+            </div>
+
+            <div>
+              <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+                A Little About Me
+              </p>
+              <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6">
+                Meet Forever
+              </h2>
+              <div className="space-y-4 text-foreground leading-relaxed">
+                <p>
+                  I'm a writer and product marketer who believes that great copy
+                  isn't just about selling, it's about creating genuine
+                  connections. With years of experience helping brands find
+                  their voice, I specialize in transforming complex ideas into
+                  clear, compelling stories.
+                </p>
+                <p>
+                  My approach combines strategic thinking with authentic
+                  storytelling. Whether it's web copy, email campaigns, or brand
+                  messaging, I craft words that resonate with your audience and
+                  drive real results.
+                </p>
+                <p className="text-muted-foreground">
+                  When I'm not writing, you'll find me exploring new
+                  perspectives, reading everything I can get my hands on, and
+                  yes, explaining to people that Forever really is my actual
+                  name.
+                </p>
+              </div>
+              <Button size="lg" variant="outline" asChild className="mt-8">
+                <Link href="/about">Work With Me</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
