@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     "Forever Ephraim | Creative Copywriter | Content Writer | Email Copywriter | Brand Storyteller | Freelancer",
   description:
     "I’m Forever, and I turn boring brand messages into stuff people actually want to read. If your brand needs words with personality, nice to meet you!",
-  metadataBase: new URL("https://forever-ephraim.vercel.app/"),
+  metadataBase: new URL("https://foreverephraim.vercel.app/"),
   openGraph: {
     title:
       "Forever Ephraim | Creative Copywriter | Content Writer | Email Copywriter | Brand Storyteller | Freelancer",
     description:
       "I’m Forever, and I turn boring brand messages into stuff people actually want to read. If your brand needs words with personality, nice to meet you!",
-    url: "https://forever-ephraim.vercel.app/",
+    url: "https://foreverephraim.vercel.app/",
     siteName: "Forever Ephraim",
     images: ["/forever-2.jpeg"],
     locale: "en_US",
@@ -81,8 +81,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${playfair.variable} scroll-smooth`}
+      suppressHydrationWarning
     >
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <Navigation />
         {children}
         <Footer />
