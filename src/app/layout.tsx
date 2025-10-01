@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Footer } from "@/components/common/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,8 +18,31 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Forever Ephraim | Writer & Product Marketer",
-  description: "Crafting copies that connect, move people, and convert.",
+  title:
+    "Forever Ephraim | Creative Copywriter | Content Writer | Email Copywriter | Brand Storyteller | Freelancer",
+  description:
+    "I’m Forever, and I turn boring brand messages into stuff people actually want to read. If your brand needs words with personality, nice to meet you!",
+  metadataBase: new URL("https://forever-ephraim.vercel.app/"),
+  openGraph: {
+    title:
+      "Forever Ephraim | Creative Copywriter | Content Writer | Email Copywriter | Brand Storyteller | Freelancer",
+    description:
+      "I’m Forever, and I turn boring brand messages into stuff people actually want to read. If your brand needs words with personality, nice to meet you!",
+    url: "https://forever-ephraim.vercel.app/",
+    siteName: "Forever Ephraim",
+    images: ["/forever-2.jpeg"],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@the__Tamtam",
+    title:
+      "Forever Ephraim | Creative Copywriter | Content Writer | Email Copywriter | Brand Storyteller | Freelancer",
+    description:
+      "I’m Forever, and I turn boring brand messages into stuff people actually want to read. If your brand needs words with personality, nice to meet you!",
+    images: ["/forever-2.jpeg"],
+  },
 };
 
 export default function RootLayout({
@@ -27,11 +51,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${playfair.variable} scroll-smooth`}
+    >
       <body className={inter.className}>
         <Navigation />
         {children}
         <Footer />
+        <Toaster richColors position="top-right" />
       </body>
     </html>
   );
