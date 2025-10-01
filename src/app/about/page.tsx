@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -16,35 +17,52 @@ export default function AboutPage() {
                 &quot;Forever?? That&apos;s Your Real Name?&quot;
               </p>
 
-              <div className="space-y-6 text-foreground leading-relaxed">
-                <p className="text-lg">
-                  I&apos;m a writer and product marketer who believes that great
-                  copy isn&apos;t just about selling, it&apos;s about creating
-                  genuine connections that move people to action.
+              <div className="space-y-6 text-sm text-foreground leading-relaxed">
+                <p className="text-base font-semibold">
+                  YES, that&apos;s really my name, and no, I didn&apos;t make it
+                  up for branding, though maybe I should&apos;ve.
                 </p>
 
                 <p>
-                  With years of experience helping brands find their voice, I
-                  specialize in transforming complex ideas into clear,
-                  compelling stories that resonate with your audience and drive
-                  measurable results.
+                  I&apos;ve been writing professionally for 4+ years, starting
+                  out in the trenches of digital marketing: social posts, email
+                  campaigns, blogs, you name it. Since then, I&apos;ve written
+                  for hundreds of brands (plus my own blog — On a Journey) and
+                  I&apos;ve learned this: good copy isn&apos;t about sounding
+                  smart, it&apos;s about sounding human.
                 </p>
 
                 <p>
-                  My approach combines strategic thinking with authentic
-                  storytelling. I don&apos;t believe in cookie-cutter solutions
-                  or generic messaging. Instead, I take the time to understand
-                  your brand, your audience, and what makes you unique.
+                  That&apos;s what I do. Copies that connect, make people feel
+                  something, and (bonus) actually convert.
                 </p>
 
                 <p>
-                  Whether it&apos;s web copy that converts, email campaigns that
-                  engage, or brand messaging that sticks, I craft words with
-                  personality and purpose. Words that people actually want to
-                  read.
+                  Case in point: a roofing client hit $100K in 10 months,
+                  another doubled leads, and a mental health company tripled
+                  engagement by leaning into storytelling that felt real.
+                  It&apos;s not magic, it&apos;s just words that sound like they
+                  were written by a person, not a robot.
                 </p>
 
-                <h3 className="font-serif text-2xl font-bold pt-4">
+                <p>
+                  When I&apos;m not glued to my keyboard, I&apos;m probably at
+                  the cinema, dodging yet another &quot;Forever? Really?&quot;
+                  reaction, or eating my way through new cuisines (my one
+                  adventurous streak).
+                </p>
+
+                <p>
+                  Oh, and one more thing. I love Jesus Christ. I&apos;m shy, but
+                  not about that.
+                </p>
+
+                <p>
+                  So… if your brand is ready for copy that feels alive, WELCOME.
+                  Let&apos;s get you initiated 🙂
+                </p>
+
+                {/* <h3 className="font-serif text-2xl font-bold pt-4">
                   What I Do
                 </h3>
 
@@ -84,7 +102,7 @@ export default function AboutPage() {
                   perspectives, reading everything I can get my hands on, and
                   yes, patiently explaining to people that Forever really is my
                   actual name.
-                </p>
+                </p> */}
               </div>
 
               <div className="flex flex-wrap gap-4 mt-8">
@@ -95,16 +113,20 @@ export default function AboutPage() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <Link href="/portfolio">View My Work</Link>
+                  <Link href="/resume">View My History</Link>
                 </Button>
               </div>
             </div>
 
             <div className="order-1 lg:order-2">
               <div className="aspect-[3/4] bg-secondary/30 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                  [Portrait Photo]
-                </div>
+                <Image
+                  src="/forever-2.jpeg"
+                  alt="Forever Headshot"
+                  width={600}
+                  height={800}
+                  className="aspect-[3/4] object-cover"
+                />
               </div>
             </div>
           </div>

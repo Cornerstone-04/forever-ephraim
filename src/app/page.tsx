@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,15 +17,16 @@ export default function Home() {
             </div>
             <div className="space-y-6">
               <p className="text-lg sm:text-xl text-foreground leading-relaxed">
-                I&apos;m Forever, and I turn boring brand messages into stuff people
-                actually want to read. If your brand needs words with
+                I&apos;m Forever, and I turn boring brand messages into stuff
+                people actually want to read. If your brand needs words with
                 personality, nice to meet you! 👋🏻
               </p>
               <p className="text-base text-muted-foreground italic">
-                &quot;Forever?? That&apos;s Your Real Name?&quot; YES, it really is.
+                &quot;Forever?? That&apos;s Your Real Name?&quot; YES, it really
+                is.
               </p>
               <Button size="lg" asChild className="group">
-                <Link href="/portfolio">
+                <Link href="/blog">
                   See My Work
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -105,9 +107,13 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="aspect-[3/4] bg-secondary/30 rounded-lg overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                [Portrait Photo]
-              </div>
+              <Image
+                src="/forever-2.jpeg"
+                alt="Forever Headshot"
+                width={600}
+                height={800}
+                className="aspect-[3/4] object-cover"
+              />
             </div>
 
             <div>
@@ -119,27 +125,25 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-foreground leading-relaxed">
                 <p>
-                  I&apos;m a writer and product marketer who believes that great copy
-                  isn&apos;t just about selling, it&apos;s about creating genuine
-                  connections. With years of experience helping brands find
-                  their voice, I specialize in transforming complex ideas into
-                  clear, compelling stories.
+                  YES, that&apos;s really my name, and no, I didn&apos;t make it
+                  up for branding, though maybe I should&apos;ve.
                 </p>
+
                 <p>
-                  My approach combines strategic thinking with authentic
-                  storytelling. Whether it&apos;s web copy, email campaigns, or brand
-                  messaging, I craft words that resonate with your audience and
-                  drive real results.
+                  I&apos;ve been writing professionally for 4+ years, starting
+                  out in the trenches of digital marketing: social posts, email
+                  campaigns, blogs, you name it. Since then, I&apos;ve written
+                  for hundreds of brands (plus my own blog — On a Journey) and
+                  I&apos;ve learned this: good copy isn&apos;t about sounding
+                  smart, it&apos;s about sounding human.
                 </p>
+
                 <p className="text-muted-foreground">
-                  When I&apos;m not writing, you&apos;ll find me exploring new
-                  perspectives, reading everything I can get my hands on, and
-                  yes, explaining to people that Forever really is my actual
-                  name.
+                  That&apos;s what I do. Copies that connect, make ...
                 </p>
               </div>
               <Button size="lg" variant="outline" asChild className="mt-8">
-                <Link href="/about">Work With Me</Link>
+                <Link href="/about">Read More</Link>
               </Button>
             </div>
           </div>
