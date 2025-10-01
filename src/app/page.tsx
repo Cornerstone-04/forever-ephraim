@@ -7,12 +7,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-background min-h-[80vh] flex justify-center items-center">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-background md:min-h-[80vh] flex justify-center items-center">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-center">
             <div>
               <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Crafting copies that connect, move people, and convert.
+                Crafting copies that connect and convert.
               </h1>
             </div>
             <div className="space-y-6">

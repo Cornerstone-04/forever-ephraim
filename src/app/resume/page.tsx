@@ -1,73 +1,12 @@
+import { ResumeButton } from "@/components/common/resume-button";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Download, Briefcase, GraduationCap, Award } from "lucide-react";
-
-const experience = [
-  {
-    title: "Senior Copywriter & Product Marketer",
-    company: "Tech Startup",
-    period: "2022 - Present",
-    description:
-      "Lead copywriting and messaging strategy for SaaS product suite. Developed brand voice guidelines and conversion-focused content across all channels.",
-    achievements: [
-      "Increased landing page conversions by 45%",
-      "Launched 3 successful product campaigns",
-      "Built email automation that generated $500K in revenue",
-    ],
-  },
-  {
-    title: "Content Strategist",
-    company: "Digital Agency",
-    period: "2020 - 2022",
-    description:
-      "Crafted content strategies and copy for diverse client portfolio including B2B SaaS, e-commerce, and lifestyle brands.",
-    achievements: [
-      "Managed 15+ client accounts simultaneously",
-      "Created messaging frameworks for 20+ brands",
-      "Improved average client engagement by 200%",
-    ],
-  },
-  {
-    title: "Copywriter",
-    company: "Marketing Firm",
-    period: "2018 - 2020",
-    description:
-      "Developed copy for email campaigns, landing pages, ads, and website content across multiple industries.",
-    achievements: [
-      "Wrote 100+ high-performing email campaigns",
-      "Achieved 8% average CTR (2x industry standard)",
-      "Contributed to $2M in client revenue growth",
-    ],
-  },
-];
-
-const skills = [
-  "Strategic Copywriting",
-  "Brand Messaging",
-  "Product Marketing",
-  "Email Marketing",
-  "Content Strategy",
-  "Conversion Optimization",
-  "SEO Writing",
-  "Storytelling",
-  "UX Writing",
-  "Go-to-Market Strategy",
-  "Marketing Automation",
-  "Customer Research",
-];
-
-const education = [
-  {
-    degree: "Bachelor of Arts in Communications",
-    school: "University Name",
-    year: "2018",
-  },
-  {
-    degree: "Certification in Digital Marketing",
-    school: "Marketing Institute",
-    year: "2019",
-  },
-];
+import { certifications } from "@/data/certifications";
+import { education } from "@/data/education";
+import { experience } from "@/data/experience";
+import { skills } from "@/data/skills";
+import { tools } from "@/data/tools";
+import { Briefcase, GraduationCap, Award, ToolCaseIcon } from "lucide-react";
 
 export default function ResumePage() {
   return (
@@ -85,10 +24,7 @@ export default function ResumePage() {
               A track record of transforming words into results for brands
               across industries.
             </p>
-            <Button size="lg">
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
-            </Button>
+            <ResumeButton />
           </div>
         </div>
       </section>
@@ -155,6 +91,26 @@ export default function ResumePage() {
         </div>
       </section>
 
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/20">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex items-center gap-3 mb-8">
+            <ToolCaseIcon className="h-6 w-6 text-primary" />
+            <h2 className="font-serif text-3xl font-bold">Tools</h2>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {tools.map((skill, index) => (
+              <span
+                key={index}
+                className="px-4 py-2 bg-background border border-border rounded-full text-sm font-medium hover:border-primary transition-colors"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="container mx-auto max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
@@ -183,11 +139,40 @@ export default function ResumePage() {
           </div>
         </div>
       </section>
+      
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-background">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex items-center gap-3 mb-8">
+            <GraduationCap className="h-6 w-6 text-primary" />
+            <h2 className="font-serif text-3xl font-bold">Certifications</h2>
+          </div>
+
+          <div className="space-y-6">
+            {certifications.map((edu, index) => (
+              <Card key={index}>
+                <CardContent className="p-6">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <h3 className="font-serif text-lg font-bold mb-1">
+                        {edu.name}
+                      </h3>
+                      <p className="text-muted-foreground">{edu.issuer}</p>
+                    </div>
+                    <span className="text-sm text-muted-foreground mt-2 sm:mt-0">
+                      {edu.year}
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6">
-            Let&apos;s Work Together
+            Let &apos;s Work Together
           </h2>
           <p className="text-lg mb-8 opacity-90">
             Ready to bring strategic copy and compelling storytelling to your

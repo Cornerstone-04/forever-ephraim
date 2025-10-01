@@ -1,5 +1,5 @@
+import { socialLinks } from "@/data/social-links";
 import Link from "next/link";
-import { Linkedin, BookOpen, Twitter } from "lucide-react";
 
 const footerLinks = [
   { label: "Home", href: "/" },
@@ -7,12 +7,6 @@ const footerLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Resume", href: "/resume" },
   { label: "Contact", href: "/contact" },
-];
-
-const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: BookOpen, href: "#", label: "Substack" },
-  { icon: Twitter, href: "#", label: "Twitter" },
 ];
 
 export function Footer() {

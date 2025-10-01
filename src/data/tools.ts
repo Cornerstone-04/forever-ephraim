@@ -1,0 +1,15 @@
+export const tools = [
+  "Google Suite",
+  "Microsoft Office Suite",
+  "Airtable",
+  "Trello",
+  "ClickUp",
+  "Sendy",
+  "Mailchimp",
+  "Flodesk",
+  "Quillbot",
+  "Grammarly",
+  "Notion",
+  "Canva",
+  "Figma",
+];
