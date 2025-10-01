@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Linkedin, BookOpen, Twitter } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import { socialLinks } from "@/data/social-links";
