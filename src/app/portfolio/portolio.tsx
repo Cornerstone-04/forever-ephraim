@@ -127,7 +127,7 @@ export default function PortfolioPage() {
             Ready to See What Copy Can Do for Your Brand?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Let's discuss your project and explore how strategic messaging can
+            Let&apos;s discuss your project and explore how strategic messaging can
             drive real results.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -135,7 +135,7 @@ export default function PortfolioPage() {
               href="/contact"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8"
             >
-              Let's Talk Copy
+              Let&apos;s Talk Copy
             </a>
           </div>
         </div>

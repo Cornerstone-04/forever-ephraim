@@ -37,10 +37,10 @@ export default function ContactPage() {
               Contact
             </p>
             <h1 className="font-serif text-5xl sm:text-6xl font-bold mb-6">
-              Let's Talk Copy
+              Let&apos;s Talk Copy
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Whether you need fresh words, strategic messaging, or just want to say hi — I'd love to connect.
+              Whether you need fresh words, strategic messaging, or just want to say hi — I&apos;d love to connect.
             </p>
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function ContactPage() {
               Prefer a Quick Chat?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Sometimes it's easier to just talk. Schedule a 15-minute intro call to discuss your project.
+              Sometimes it&apos;s easier to just talk. Schedule a 15-minute intro call to discuss your project.
             </p>
             <Button size="lg" variant="outline">
               Schedule a Call

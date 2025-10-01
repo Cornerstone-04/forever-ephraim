@@ -2,8 +2,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-import { Navigation } from "@/components/common/navigation";
-import { Footer } from "@/components/common/footer";
 
 export default function Home() {
   return (
@@ -18,12 +16,12 @@ export default function Home() {
             </div>
             <div className="space-y-6">
               <p className="text-lg sm:text-xl text-foreground leading-relaxed">
-                I'm Forever, and I turn boring brand messages into stuff people
+                I&apos;m Forever, and I turn boring brand messages into stuff people
                 actually want to read. If your brand needs words with
                 personality, nice to meet you! 👋🏻
               </p>
               <p className="text-base text-muted-foreground italic">
-                "Forever?? That's Your Real Name?" YES, it really is.
+                &quot;Forever?? That&apos;s Your Real Name?&quot; YES, it really is.
               </p>
               <Button size="lg" asChild className="group">
                 <Link href="/portfolio">
@@ -121,20 +119,20 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-foreground leading-relaxed">
                 <p>
-                  I'm a writer and product marketer who believes that great copy
-                  isn't just about selling, it's about creating genuine
+                  I&apos;m a writer and product marketer who believes that great copy
+                  isn&apos;t just about selling, it&apos;s about creating genuine
                   connections. With years of experience helping brands find
                   their voice, I specialize in transforming complex ideas into
                   clear, compelling stories.
                 </p>
                 <p>
                   My approach combines strategic thinking with authentic
-                  storytelling. Whether it's web copy, email campaigns, or brand
+                  storytelling. Whether it&apos;s web copy, email campaigns, or brand
                   messaging, I craft words that resonate with your audience and
                   drive real results.
                 </p>
                 <p className="text-muted-foreground">
-                  When I'm not writing, you'll find me exploring new
+                  When I&apos;m not writing, you&apos;ll find me exploring new
                   perspectives, reading everything I can get my hands on, and
                   yes, explaining to people that Forever really is my actual
                   name.

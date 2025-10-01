@@ -187,7 +187,7 @@ export default function ResumePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-lg mb-8 opacity-90">
             Ready to bring strategic copy and compelling storytelling to your

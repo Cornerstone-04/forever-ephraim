@@ -13,14 +13,14 @@ export default function AboutPage() {
                 Meet Forever
               </h1>
               <p className="text-sm uppercase tracking-widest text-muted-foreground mb-8">
-                &quot;Forever?? That’s Your Real Name?&quot;
+                &quot;Forever?? That&apos;s Your Real Name?&quot;
               </p>
 
               <div className="space-y-6 text-foreground leading-relaxed">
                 <p className="text-lg">
-                  I'm a writer and product marketer who believes that great copy
-                  isn't just about selling, it's about creating genuine
-                  connections that move people to action.
+                  I&apos;m a writer and product marketer who believes that great
+                  copy isn&apos;t just about selling, it&apos;s about creating
+                  genuine connections that move people to action.
                 </p>
 
                 <p>
@@ -32,13 +32,13 @@ export default function AboutPage() {
 
                 <p>
                   My approach combines strategic thinking with authentic
-                  storytelling. I don't believe in cookie-cutter solutions or
-                  generic messaging. Instead, I take the time to understand your
-                  brand, your audience, and what makes you unique.
+                  storytelling. I don&apos;t believe in cookie-cutter solutions
+                  or generic messaging. Instead, I take the time to understand
+                  your brand, your audience, and what makes you unique.
                 </p>
 
                 <p>
-                  Whether it's web copy that converts, email campaigns that
+                  Whether it&apos;s web copy that converts, email campaigns that
                   engage, or brand messaging that sticks, I craft words with
                   personality and purpose. Words that people actually want to
                   read.
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 </ul>
 
                 <p className="text-muted-foreground italic pt-4">
-                  When I'm not writing, you'll find me exploring new
+                  When I&apos;m not writing, you&apos;ll find me exploring new
                   perspectives, reading everything I can get my hands on, and
                   yes, patiently explaining to people that Forever really is my
                   actual name.
@@ -114,11 +114,11 @@ export default function AboutPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/20">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6">
-            Let's Create Something Amazing Together
+            Let&apos;s Create Something Amazing Together
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Ready to transform your brand messaging? I'd love to hear about your
-            project.
+            Ready to transform your brand messaging? I&apos;d love to hear about
+            your project.
           </p>
           <Button size="lg" asChild>
             <Link href="/contact">Get In Touch</Link>
