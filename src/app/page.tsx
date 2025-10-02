@@ -156,7 +156,7 @@ export default function Home() {
           </h2>
 
           <p className="text-lg mb-8 opacity-90">
-            Let's create copy that connects, converts, and feels authentically
+            Let&apos;s create copy that connects, converts, and feels authentically
             you.
           </p>
 
@@ -165,7 +165,7 @@ export default function Home() {
             className="inline-flex items-center gap-2 bg-white text-[#262626] px-8 py-4 rounded-md text-base font-semibold"
           >
             <Link href="/contact">
-              Let's Work Together
+              Let&apos;s Work Together
               <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>
