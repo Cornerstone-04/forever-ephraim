@@ -149,7 +149,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#262626] text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent-foreground text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6">
             Ready to Transform Your Brand Message?

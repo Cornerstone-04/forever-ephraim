@@ -153,9 +153,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/20">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent-foreground">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6 text-white">
             Prefer a Quick Chat?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">

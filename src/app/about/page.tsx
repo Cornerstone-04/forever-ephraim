@@ -133,7 +133,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/20">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent-foreground text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6">
             Let&apos;s Create Something Amazing Together
@@ -142,7 +142,11 @@ export default function AboutPage() {
             Ready to transform your brand messaging? I&apos;d love to hear about
             your project.
           </p>
-          <Button size="lg" asChild>
+          <Button
+            className="inline-flex items-center gap-2 bg-white text-foreground px-8 py-4 rounded-md text-base font-semibold"
+            size="lg"
+            asChild
+          >
             <Link href="/contact">Get In Touch</Link>
           </Button>
         </div>
