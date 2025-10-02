@@ -13,7 +13,7 @@ export function Footer() {
   return (
     <footer className="bg-secondary/30 border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:justify-items-center">
           <div>
             <h3 className="font-serif text-xl font-bold mb-4">
               Forever Ephraim
@@ -62,9 +62,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-border text-center">
+        <div className="mt-8 pt-8 border-t border-border text-center flex flex-col md:flex-row justify-between items-center gap-2">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Forever Ephraim. All rights reserved.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Developed by{" "}
+            <Link
+              href="https://cornerstoneephraim.vercel.app/"
+              className="underline cursor-pointer"
+            >
+              Cornerstone
+            </Link>
           </p>
         </div>
       </div>

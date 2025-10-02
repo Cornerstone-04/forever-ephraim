@@ -149,6 +149,28 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#262626] text-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6">
+            Ready to Transform Your Brand Message?
+          </h2>
+
+          <p className="text-lg mb-8 opacity-90">
+            Let's create copy that connects, converts, and feels authentically
+            you.
+          </p>
+
+          <Button
+            asChild
+            className="inline-flex items-center gap-2 bg-white text-[#262626] px-8 py-4 rounded-md text-base font-semibold"
+          >
+            <Link href="/contact">
+              Let's Work Together
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+      </section>
     </main>
   );
 }

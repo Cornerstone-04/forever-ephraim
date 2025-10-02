@@ -91,7 +91,7 @@ export default function ResumePage() {
         </div>
       </section>
 
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/20">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-background/20">
         <div className="container mx-auto max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <ToolCaseIcon className="h-6 w-6 text-primary" />
@@ -111,7 +111,7 @@ export default function ResumePage() {
         </div>
       </section>
 
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-background">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/20">
         <div className="container mx-auto max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <GraduationCap className="h-6 w-6 text-primary" />

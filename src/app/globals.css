@@ -45,7 +45,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  /* --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -62,7 +62,7 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --ring: oklch(0.708 0 0); */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -77,7 +77,43 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  --radius: 0.5rem;
+  /* custom */
+  /* Backgrounds */
+  --background: hsl(43 33% 98%);
+  --foreground: hsl(0 0% 15%);
+
+  /* Card/Secondary surfaces */
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(0 0% 15%);
+
+  /* Popover */
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(20 14% 26%);
+
+  /* Primary (CTA buttons, links, accents) */
+  --primary: hsl(20 14% 26%);
+  --primary-foreground: hsl(0 0% 100%);
+
+  /* Secondary (subtle buttons, hover states) */
+  --secondary: hsl(30 13% 87%);
+  --secondary-foreground: hsl(0 0% 15%);
+
+  /* Muted (disabled states, subtle backgrounds) */
+  --muted: hsl(30 13% 87%);
+  --muted-foreground: hsl(20 10% 62%);
+
+  /* Accent (highlights, hover states) */
+  --accent: hsl(30 13% 87%);
+  --accent-foreground: hsl(20 14% 26%);
+
+  /* Destructive (errors, warnings) */
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+
+  /* Borders */
+  --border: hsl(20 10% 62%);
+  --input: hsl(30 13% 87%);
+  --ring: hsl(0 0% 15%);
 }
 
 .dark {

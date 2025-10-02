@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Footer } from "@/components/common/footer";
 import { Toaster } from "@/components/ui/sonner";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { queryClient } from "@/lib/constant";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -84,10 +87,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className={inter.className} suppressHydrationWarning>
-        <Navigation />
-        {children}
-        <Footer />
-        <Toaster richColors position="top-right" />
+        <QueryClientProvider client={queryClient}>
+          <Navigation />
+          {children}
+          <Footer />
+          <Toaster richColors position="top-right" />
+          <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
       </body>
     </html>
   );
