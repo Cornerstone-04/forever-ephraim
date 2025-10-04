@@ -18,9 +18,7 @@ export function Footer() {
             <h3 className="font-serif text-xl font-bold mb-4">
               Forever Ephraim
             </h3>
-            <p className="text-sm text-muted-foreground">
-              Writer & Product Marketer
-            </p>
+            <p className="text-sm text-muted-foreground">Copy Specialist</p>
           </div>
 
           <div>

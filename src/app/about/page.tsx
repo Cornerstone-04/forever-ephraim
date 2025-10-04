@@ -143,7 +143,7 @@ export default function AboutPage() {
             your project.
           </p>
           <Button
-            className="inline-flex items-center gap-2 bg-white text-foreground px-8 py-4 rounded-md text-base font-semibold"
+            className="inline-flex items-center gap-2 bg-white hover:bg-white/80 text-foreground px-8 py-4 rounded-md text-base font-semibold"
             size="lg"
             asChild
           >

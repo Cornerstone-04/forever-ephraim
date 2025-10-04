@@ -156,8 +156,8 @@ export default function Home() {
           </h2>
 
           <p className="text-lg mb-8 opacity-90">
-            Let&apos;s create copy that connects, converts, and feels authentically
-            you.
+            Let&apos;s create copy that connects, converts, and feels
+            authentically you.
           </p>
 
           <Button

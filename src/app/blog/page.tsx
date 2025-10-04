@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
 import Link from "next/link";
-import { BlogPost } from "@/types";
+import Image from "next/image";
 
 export default function BlogPage() {
   const { data: posts = [], isLoading, error } = useSubstackPosts();
@@ -50,11 +50,27 @@ export default function BlogPage() {
       <section className="py-12 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.slice(0, visible).map((post: BlogPost, i: number) => (
+            {posts.slice(0, visible).map((post, i) => (
               <Card
-                key={i}
-                className="group hover:shadow-lg transition-all duration-300 flex flex-col"
+                key={`${post.link}-${i}`}
+                className="group hover:shadow-lg transition-all duration-300 flex flex-col overflow-hidden py-0"
               >
+                {post.thumbnail && (
+                  <div className="relative aspect-[16/9] w-full overflow-hidden">
+                    <Image
+                      src={post.thumbnail}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw,
+                             (max-width: 1024px) 50vw,
+                             (max-width: 1280px) 33vw,
+                             33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      priority={i < 2} // eager-load first row, tweak as you like
+                    />
+                  </div>
+                )}
+
                 <CardContent className="p-6 flex-1 flex flex-col">
                   <div className="flex items-center text-xs text-muted-foreground mb-3">
                     <Calendar className="h-3 w-3 mr-1" />
